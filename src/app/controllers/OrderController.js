@@ -78,7 +78,7 @@ class OrderController {
 
     async update(request, response) {
         const schema = Yup.object().shape({
-            status: Yup.string().required()
+            status: Yup.string().required(),
         })
 
         try {
