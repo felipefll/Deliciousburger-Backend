@@ -5,7 +5,7 @@ module.exports = {
     await queryInterface.createTable("Users", {
       id: {
         type: Sequelize.UUID,
-        defaltValue: Sequelize.UUIDV4,
+        defaultValue: Sequelize.UUIDV4,
         allowNull: false,
         primaryKey: true,
       },
@@ -24,7 +24,7 @@ module.exports = {
       },
       admin: {
         type: Sequelize.BOOLEAN,
-        defaltValue: false,
+        defaultValue: false,
         allowNull: false,
       },
       createdAt: {
